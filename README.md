@@ -1,104 +1,109 @@
-# gentelella
+# [Light Bootstrap Dashboard](http://www.creative-tim.com/product/light-bootstrap-dashboard)
 
-Gentellela Admin is a free to use Bootstrap admin template.
-This template uses the default Bootstrap 3 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating admin panels or back-end dashboards.
+Light Bootstrap Dashboard is an admin dashboard template designed to be beautiful and simple. It is built on top of Bootstrap 3 and it is fully responsive. It comes with a big collections of elements that will offer you multiple possibilities to create the app that best fits your needs. It can be used to create admin panels, project management systems, web applications backend, CMS or CRM.
 
-Theme uses several libraries for charts, calendar, form validation, wizard style interface, off-canvas navigation menu, text forms, date range, upload area, form autocomplete, range slider, progress bars, notifications and much more.
+The product represents a big suite of front-end developer tools that can help you jump start your project. We have created it thinking about things you actually need in a dashboard. Light Bootstrap Dashboard contains multiple handpicked and optimised plugins. Everything is designed to fit with one another. As you will be able to see, the dashboard you can access on Creative Tim is a customisation of this product.
 
-We would love to see how you use this awesome admin template. You can notify us about your site, app or service by tweeting to [@colorlib](https://twitter.com/colorlib). Once the list will grown long enough we will write a post similar to [this](https://colorlib.com/wp/avada-theme-examples/) to showcase the best examples.
+It comes with 6 filter colors for the sidebar (“black”, “azure”,”green”,”orange”,”red”,”purple”) and an option to have a background image.
+
+Special thanks go to:
+Robert McIntosh for the notification system
+Chartist for the wonderful charts
+We are very excited to share this dashboard with you and we look forward to hearing your feedback!
+
+## Links:
+
++ [Live Preview](http://demos.creative-tim.com/light-bootstrap-dashboard)
++ [Video Tutorial](https://www.youtube.com/watch?v=c3M3NQtFyqM)
++ [Light Bootstrap Dashboard PRO](http://www.creative-tim.com/product/light-bootstrap-dashboard-pro) (from $39)
+
+## Quick start
+
+Quick start options:
+
+- [Download from Github](https://github.com/timcreative/light-bootstrap-dashboard/releases/tag/v1.3).
+- [Download from Creative Tim](http://www.creative-tim.com/product/light-bootstrap-dashboard).
+- Clone the repo: `git clone https://github.com/timcreative/light-bootstrap-dashboard.git`.
 
 
-## Theme Demo
-![Gentelella Bootstrap Admin Template](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/gentelella-admin-template-preview.jpg "Gentelella Theme Browser Preview")
+### What's included
 
-**[Template Demo](https://colorlib.com/polygon/gentelella/index.html)**
-
-## Installation via Package Manger
-
-Our goal is to make it installable on different Package Manager! Do you want to use it on your favorite Package Manager and you know how? Pull request all the way! 
-
-As of now, this is some installation available:
-
-**Bower**
+Within the download you'll find the following directories and files:
 
 ```
-bower install gentelella --save
+x_lbd_free/
+├── assets/
+|   ├── css/
+|   |   ├── animate.min.css
+|   |   ├── bootstrap.min.css
+|   |   ├── demo.css
+│   |   ├── light-bootstrap-dashboard.css
+│   |   └── pe-icon-7-stroke.css
+|   ├── js/
+|   |   ├── bootstrap-checkbox-radio-switch.js
+|   |   ├── bootstrap-notify.js
+|   |   ├── bootstrap-select.js
+|   |   ├── bootstrap.min.js
+│   |   ├── chartist.min.js
+│   |   ├── demo.js
+│   |   ├── jquery-1.10.2.js
+│   |   └── light-bootstrap-dashboard.js
+|   ├── fonts/
+|   |    ├── Pe-icon-7-stroke.eot
+|   |    ├── Pe-icon-7-stroke.svg
+|   |    ├── Pe-icon-7-stroke.ttf
+|   |    └── Pe-icon-7-stroke.woff
+|   └── img/
+|
+├── Creative Tim License.pdf
+├── dashboard.html
+├── icons.html
+├── maps.html
+├── notifications.html
+├── table.html
+├── template.html
+├── typography.html
+├── upgrade.html
+└── user.html
+
 ```
 
-**npm**
+### Version logs
 
-```
-npm install gentelella --save
-```
-## How to contribute
-To contribute, please ensure that you have stable [Node.js](https://nodejs.org/) and [npm](https://npmjs.com) installed.
+V1.0 - 20 August 2015 initial release
 
-Test if Gulp CLI is installed by running `gulp --version`.  If the command isn't found, run `npm install -g gulp`.  For more information about installing Gulp, see the Gulp's [Getting Started](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
+V1.1 - 08 September 2015 - bug fixing [current version]
+- added company name/logo inside the sidebar for small screens
+- fixed bug for notification with close button on small screens
+- fix live preview bug for download on small screens
+- fix table responsive for small screens
+- added new labels for chartist on small screens
 
-If `gulp` is installed, follow the steps below.
+V1.2 - 17 January 2016 - New Page
+- for those who want to upsell inside their dashboard we added a new page "Upgrade to PRO" with a pricing and options table
 
-1. Fork and clone the repo.
-2. Run `gulp`, this will open gentelella on your default browser
-3. Now you can code, code and code!
-4. Submit a pull request
+V1.3 - 22 January 2016 - New Template page + Video Tutorial [current version]
+- added the default template page + youtube video tutorial on how to create an Admin Template (link coming soon)
 
-## Scripts included:
-* Bootstrap
-* Font Awesome
-* jQuery-Autocomplete
-* FullCalendar
-* Charts.js
-* Bootstrap Colorpicker
-* Cropper
-* dataTables
-* Date Range Picker for Bootstrap
-* Dropzone
-* easyPieChart
-* ECharts
-* bootstrap-wysiwyg
-* Flot - Javascript plotting library for jQuery.
-* gauge.js
-* iCheck
-* jquery.inputmask plugin
-* Ion.RangeSlider
-* jQuery
-* jVectorMap
-* moment.js
-* Morris.js - pretty time-series line graphs
-* PNotify - Awesome JavaScript notifications
-* NProgress
-* Pace
-* Parsley
-* bootstrap-progressbar
-* select2
-* Sidebar Transitions - simple off-canvas navigations
-* Skycons - canvas based wather icons
-* jQuery Sparklines plugin
-* switchery - Turns HTML checkbox inputs into beautiful iOS style switches
-* jQuery Tags Input Plugin
-* Autosize - resizes text area to fit text
-* validator - HTML from validator using jQuery
-* jQuery Smart Wizard
 
-## Gentellela for other platforms and frameworks
+## Useful Links
 
-* [Gentelella on Ruby on Rails 4](https://github.com/iogbole/gentelella_on_rails) thanks to Israel Ogbole.
-* [Gentellela on Smarty 3](https://github.com/microvb/otp-thing) with one time password generator, validator, and QR code generator that has no web dependencies (self-contained) in PHP thanks to MicroVB INC
-* [Gentellela integrated into Symfony 3](https://github.com/krzysiekpiasecki/Gentelella) full stack PHP framework thanks to Krzysztof Piasecki.
-* [Gentelella on Yii framework 2](https://github.com/yiister/yii2-gentelella) with an asset bundle, a layout template and some widgets.
+More products from Creative Tim: <http://www.creative-tim.com/products>
 
-Let us know if you have done integration for this admin template on other platforms and frameworks and we'll be happy to share your work.
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-## Other templates and useful resources
-* [Free Bootstrap Admin Templates](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/ "Bootstrap Admin Templates on Colorlib") - List of the best Free Bootstrap admin dashboard templates that are available for free for personal and commercial use.
-* [Free Admin Templates](https://colorlib.com/wp/free-html5-admin-dashboard-templates/ "List of free HTML based admin templates by Colorlib") - Long list of the best free HTML5 powered admin dashboard templates. Available for personal and commercial use.
-* [Angular Templates](https://colorlib.com/wp/angularjs-admin-templates/ "Angular Admin Templates on Colorlib") - List of the most popular admin templates based on AngularJS.
-* [HTML Admin Templates](https://colorlib.com/wp/html-admin-templates/ "Material Design Admin Templates on Colorlib") - Most of these templates are based on AngularJS and uses a stunning Material design.
-* [Bootstrap Admin Templates](https://colorlib.com/wp/bootstrap-admin-templates/ "List of Premium Bootstrap Admin Templates by Colorlib") - List of premium Bootstrap admin templates that uses a minimal flat or material design. Majority of these themes uses AngularJS but HTML5 versions are also available.
-* [WordPress Admin Templates](https://colorlib.com/wp/wordpress-admin-dashboard-themes-plugins/ "List of WordPress Admin Dashboard Templates and Plugins by Colorlib") - List of the best WordPress admin dashboard templates and plugins that will add a personal touch to your WordPress dashboard.
-* [WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/ "List of Free WordPress themes by Colorlib") - A huge selection of the best free WordPress themes that are all licensed under GPL and are available for personal and commercial use without restrictions.
+Freebies: <http://www.creative-tim.com/products>
 
-## License information
-Gentellela is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. But you always need to state that Colorlib is the original author of this template.
+Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
 
-Project is developed and maintained by [Colorlib](https://colorlib.com/ "Colorlib - Make Your First Blog") and Aigars Silkalns
+Social Media:
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
