@@ -1,106 +1,104 @@
-# Dashboards by Keen IO
+# gentelella
 
-Building an analytics dashboard? Don’t start from scratch. Grab one of our Bootstrap-based templates and admire your data in minutes.
+Gentellela Admin is a free to use Bootstrap admin template.
+This template uses the default Bootstrap 3 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating admin panels or back-end dashboards.
 
-Begin with a layout:
+Theme uses several libraries for charts, calendar, form validation, wizard style interface, off-canvas navigation menu, text forms, date range, upload area, form autocomplete, range slider, progress bars, notifications and much more.
 
-![Hero Thirds Example](http://cl.ly/image/3v2H180U0k0Q/Screen%20Shot%202014-10-29%20at%203.12.24%20AM.png)
+We would love to see how you use this awesome admin template. You can notify us about your site, app or service by tweeting to [@colorlib](https://twitter.com/colorlib). Once the list will grown long enough we will write a post similar to [this](https://colorlib.com/wp/avada-theme-examples/) to showcase the best examples.
 
-Add charts to each `chart-stage` HTML element:
 
-``` html
-<div class="col-sm-6 col-md-3">
-  <div class="chart-wrapper">
-    <div class="chart-title">
-      Chart Title
-    </div>
-    <div class="chart-stage">
-      <div id="grid-1-1">
-        <!-- chart goes here! -->
-      </div>
-    </div>
-    <div class="chart-notes">
-      Notes about this chart (optional)
-    </div>
-  </div>
-</div>
-```
+## Theme Demo
+![Gentelella Bootstrap Admin Template](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/gentelella-admin-template-preview.jpg "Gentelella Theme Browser Preview")
 
-And voilà!
+**[Template Demo](https://colorlib.com/polygon/gentelella/index.html)**
 
-![Sample Dashboard](http://cl.ly/image/1T3a0X402r0W/Screen%20Shot%202014-10-29%20at%203.35.04%20AM.png)
+## Installation via Package Manger
 
-An attractive, custom analytics dashboard that's ready to be shown to your team or your customers. No hours lost tweaking CSS or testing responsiveness on eight different mobile devices.
+Our goal is to make it installable on different Package Manager! Do you want to use it on your favorite Package Manager and you know how? Pull request all the way! 
 
-## The Templates
+As of now, this is some installation available:
 
-These layout templates are composed of a minimal set of [Bootstrap v3.2](http://getbootstrap.com/) custom styles. They cover the most common use cases and layout configurations we've encountered so far.
-
-* [Layouts](http://keen.github.io/dashboards/layouts/) for pre-built, responsive dashboard views
-* [Examples](http://keen.github.io/dashboards/examples/) for specific domains, data models and popular integrations
-
-## Integrations
-
-These templates can work with any data source or charting library, but they're particularly streamlined to work with Keen IO's [visualization toolkit](https://github.com/keenlabs/keen-js). To see the Keen integration in action, create a [free project](http://keen.io/signup?s=gh-dashboards) and send some data to it. Then add some charts to your dashboard with just a few lines of code.
-
-You can also use this pre-populated set of [demo data](https://github.com/keen/dashboards/tree/gh-pages/demo-data). 
-
-## Usage
-
-Ready to use one of these awesome layouts? Here's how to get started.
-
-1. In the sidebar, is a *Download Zip* link. Click it to download a copy of the code.
-
-2. Check out the various [layouts](http://keen.github.io/dashboards/layouts/) and pick the one that best suits your needs. Find the template in the repository you downloaded at `folder/layouts/(name-of-template)`.
-
-3. Start editing! In the destination folder will exist an `.html` file. Open it in your favorite text editor. There are three things you need to do to edit your dashboard:
-  1. Setup: If you're a registered Keen IO user, navigate to [your keen project](http://keen.io/login?s=gh-dashboards) or if you don't have a user at first, you can simply use some demo data that we've prepared for you. You can access those by going to the repository and navigating to demo-data. There, you will see some javascript files with some code in them. We will simply paste those in the .html file.
-  2. Some copypasta. When you navigate to the bottom of the .html file, you can see that there are a bunch of script tags. Just before the end of the body tag, we're going to add in the code from sample.html. Simply copy and paste the code just before you see ```</body>```.
-  3. Once you've done that we need to hook up the specific items within the template to the code that we've just pasted in to our file. In line 21 of sample.html, you will see a line of code: ```document.getElementById('chart-01')```. That means that this *query* will try to find inside the html file a node with an id of 'chart-01'. In these templates, you will see lines of that resemble something like:
-  ```html
-  <div class="chart-stage"> <!-- This is where you need to put the id property in! -->
-    <img data-src="holder.js/100%x650/white">
-  </div>
-  ```
-  Now we're going to change those lines so that it looks like this:
-  ```html
-  <div class="chart-stage" id="chart-01"> <!-- This is where you need to put the id property in! -->
-    <!-- Get rid of that img tag! -->
-  </div>
-  ```
-
-You're finished! Congratulations on setting up your first chart! Repeat step three with the rest of the items in the template to complete your dashboard!
-
-## Contributing
-
-Contributions are 11,000,000% welcome! That's a lot!
-
-Please file issues for any bugs you find or features you'd like to see. And if you're up for it, send in a pull request.
-
-To develop, you'll need to first install dependencies using [Bower](http://bower.io/):
+**Bower**
 
 ```
-$ npm install -g bower
-$ bower install
+bower install gentelella --save
 ```
 
-Note: Updates to the site backed by the **gh-pages** branch go live immediately once pull requests are reviewed and approved.
-
-Note #2: This project is moving fast, so make sure and stay up to date. Here's what we suggest. Fork this repo, clone the fork, and add the original repo as a remote called `upstream`:
+**npm**
 
 ```
-$ git clone https://github.com/username/dashboards.git
-$ cd dashboards
-$ git remote add upstream https://github.com/keen/dashboards.git
+npm install gentelella --save
 ```
+## How to contribute
+To contribute, please ensure that you have stable [Node.js](https://nodejs.org/) and [npm](https://npmjs.com) installed.
 
-Pull from `upstream` frequently to keep your local copy up to date:
+Test if Gulp CLI is installed by running `gulp --version`.  If the command isn't found, run `npm install -g gulp`.  For more information about installing Gulp, see the Gulp's [Getting Started](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
 
-```
-$ git pull upstream gh-pages
-```
+If `gulp` is installed, follow the steps below.
 
-## Support
+1. Fork and clone the repo.
+2. Run `gulp`, this will open gentelella on your default browser
+3. Now you can code, code and code!
+4. Submit a pull request
 
-Need a hand with something? Send us an email to [contact@keen.io](mailto:contact@keen.io) and we'll get back to you right away!
-For technical questions, use the [`keen-io`](https://stackoverflow.com/questions/tagged/keen-io) tag on Stack Overflow.
+## Scripts included:
+* Bootstrap
+* Font Awesome
+* jQuery-Autocomplete
+* FullCalendar
+* Charts.js
+* Bootstrap Colorpicker
+* Cropper
+* dataTables
+* Date Range Picker for Bootstrap
+* Dropzone
+* easyPieChart
+* ECharts
+* bootstrap-wysiwyg
+* Flot - Javascript plotting library for jQuery.
+* gauge.js
+* iCheck
+* jquery.inputmask plugin
+* Ion.RangeSlider
+* jQuery
+* jVectorMap
+* moment.js
+* Morris.js - pretty time-series line graphs
+* PNotify - Awesome JavaScript notifications
+* NProgress
+* Pace
+* Parsley
+* bootstrap-progressbar
+* select2
+* Sidebar Transitions - simple off-canvas navigations
+* Skycons - canvas based wather icons
+* jQuery Sparklines plugin
+* switchery - Turns HTML checkbox inputs into beautiful iOS style switches
+* jQuery Tags Input Plugin
+* Autosize - resizes text area to fit text
+* validator - HTML from validator using jQuery
+* jQuery Smart Wizard
+
+## Gentellela for other platforms and frameworks
+
+* [Gentelella on Ruby on Rails 4](https://github.com/iogbole/gentelella_on_rails) thanks to Israel Ogbole.
+* [Gentellela on Smarty 3](https://github.com/microvb/otp-thing) with one time password generator, validator, and QR code generator that has no web dependencies (self-contained) in PHP thanks to MicroVB INC
+* [Gentellela integrated into Symfony 3](https://github.com/krzysiekpiasecki/Gentelella) full stack PHP framework thanks to Krzysztof Piasecki.
+* [Gentelella on Yii framework 2](https://github.com/yiister/yii2-gentelella) with an asset bundle, a layout template and some widgets.
+
+Let us know if you have done integration for this admin template on other platforms and frameworks and we'll be happy to share your work.
+
+## Other templates and useful resources
+* [Free Bootstrap Admin Templates](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/ "Bootstrap Admin Templates on Colorlib") - List of the best Free Bootstrap admin dashboard templates that are available for free for personal and commercial use.
+* [Free Admin Templates](https://colorlib.com/wp/free-html5-admin-dashboard-templates/ "List of free HTML based admin templates by Colorlib") - Long list of the best free HTML5 powered admin dashboard templates. Available for personal and commercial use.
+* [Angular Templates](https://colorlib.com/wp/angularjs-admin-templates/ "Angular Admin Templates on Colorlib") - List of the most popular admin templates based on AngularJS.
+* [HTML Admin Templates](https://colorlib.com/wp/html-admin-templates/ "Material Design Admin Templates on Colorlib") - Most of these templates are based on AngularJS and uses a stunning Material design.
+* [Bootstrap Admin Templates](https://colorlib.com/wp/bootstrap-admin-templates/ "List of Premium Bootstrap Admin Templates by Colorlib") - List of premium Bootstrap admin templates that uses a minimal flat or material design. Majority of these themes uses AngularJS but HTML5 versions are also available.
+* [WordPress Admin Templates](https://colorlib.com/wp/wordpress-admin-dashboard-themes-plugins/ "List of WordPress Admin Dashboard Templates and Plugins by Colorlib") - List of the best WordPress admin dashboard templates and plugins that will add a personal touch to your WordPress dashboard.
+* [WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/ "List of Free WordPress themes by Colorlib") - A huge selection of the best free WordPress themes that are all licensed under GPL and are available for personal and commercial use without restrictions.
+
+## License information
+Gentellela is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. But you always need to state that Colorlib is the original author of this template.
+
+Project is developed and maintained by [Colorlib](https://colorlib.com/ "Colorlib - Make Your First Blog") and Aigars Silkalns
